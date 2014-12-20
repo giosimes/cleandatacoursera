@@ -58,23 +58,23 @@ The following pre-requisites are necessary in order that the script will execute
 The input dataset is divided in two types "test" and "train". In order to avoid duplicate code the readDataSet function is implemented to read a complete data set for the given dataset type. Within this function the input dataset is read, cleaned and adjusted according to the required goal. The following key steps are executed for that purpose:
 
 1. Read master data
-* Features: are used to replace column names for the measurements with descriptive lables
-* Activity labels: are used to replace integer values for the activity with descriptive labels
+  - Features: are used to replace column names for the measurements with descriptive lables
+  - Activity labels: are used to replace integer values for the activity with descriptive labels
 
 2. Read subject data 
-* Read subject 
-* Use descriptive column name for subject
+  - Read subject 
+  - Use descriptive column name for subject
 
 3. Read y_ data
-* Read y_ file (e.g. y_test.txt)
-* Use descriptive activity names by replacing integer values in a for loop with activity labels read in step 1
-* Bind with subject data from Step 2
+  - Read y_ file (e.g. y_test.txt)
+  - Use descriptive activity names by replacing integer values in a for loop with activity labels read in step 1
+  - Bind with subject data from Step 2
 
 4. Read x_ data
-* Reay x_ file (e.g. x_test.txt)
-* Use descriptive column names for variables by replacing the column names with features read in step 1
-* Subset only variables for mean and standard deviation by usage of grep function 
-* Bind with data from step 3
+  - Reay x_ file (e.g. x_test.txt)
+  - Use descriptive column names for variables by replacing the column names with features read in step 1
+  - Subset only variables for mean and standard deviation by usage of grep function 
+  - Bind with data from step 3
 
 5. Return the cleaned dataset
 
